@@ -1,0 +1,76 @@
+import french from '../images/french.jpg';
+
+export default [
+    {
+        id:1,
+        name:'African',
+        to:'/africa'
+    },
+    {
+        id:2,
+        name:'American',
+        to:'/america'
+    },
+    {
+        id:3,
+        name:'British',
+        to:'/british'
+    },
+    {
+        id:2,
+        name:'Chinese',
+        to:'/chinese'
+    },
+    {
+        id:3,
+        name:'French',
+        to:'/french',
+        img : french
+    },
+    {
+        id:1,
+        name:'German',
+        to:'/german'
+    },
+    {
+        id:2,
+        name:'Indian',
+        to:'/indian'
+    },
+    {
+        id:3,
+        name:'Italian',
+        to:'/italian'
+    },
+    {
+        id:1,
+        name:'Japanese',
+        to:'/japanese'
+    },
+    {
+        id:2,
+        name:'Korean',
+        to:'/korean'
+    },
+    {
+        id:3,
+        name:'Mexican',
+        to:'/mexican'
+    },
+    {
+        id:3,
+        name:'Spanish',
+        to:'/spanish'
+    },
+    {
+        id:3,
+        name:'Thai',
+        to:'/thai'
+    },
+    {
+        id:3,
+        name:'Vietnamese',
+        to:'/vietnamese'
+    }
+
+]
