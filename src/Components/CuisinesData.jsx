@@ -17,58 +17,58 @@ export default [
         to:'/british'
     },
     {
-        id:2,
+        id:4,
         name:'Chinese',
         to:'/chinese'
     },
     {
-        id:3,
+        id:5,
         name:'French',
         to:'/french',
         img : french
     },
     {
-        id:1,
+        id:6,
         name:'German',
         to:'/german'
     },
     {
-        id:2,
+        id:7,
         name:'Indian',
         to:'/indian'
     },
     {
-        id:3,
+        id:8,
         name:'Italian',
         to:'/italian'
     },
     {
-        id:1,
+        id:9,
         name:'Japanese',
         to:'/japanese'
     },
     {
-        id:2,
+        id:10,
         name:'Korean',
         to:'/korean'
     },
     {
-        id:3,
+        id:11,
         name:'Mexican',
         to:'/mexican'
     },
     {
-        id:3,
+        id:12,
         name:'Spanish',
         to:'/spanish'
     },
     {
-        id:3,
+        id:13,
         name:'Thai',
         to:'/thai'
     },
     {
-        id:3,
+        id:14,
         name:'Vietnamese',
         to:'/vietnamese'
     }
