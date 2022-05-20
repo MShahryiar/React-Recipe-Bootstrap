@@ -35,13 +35,15 @@ export default function Cuisine(){
             
                 {cuisine.map((recipe)=>{
                     return(
-                     <Col md={4}>                        
+                     <Col md={4}>   
+                        <Link to={'/recipe/'+recipe.id} >                    
                         <Card className="mt-2" key={recipe.id}>                        
                         <Card.Body>
                             {recipe.image &&<Card.Img variant="top" src={recipe.image} />}
                             <Card.Title>{recipe.title}</Card.Title>                             
                         </Card.Body>                       
                         </Card>
+                        </Link>
                     </Col>
                     
                     )
