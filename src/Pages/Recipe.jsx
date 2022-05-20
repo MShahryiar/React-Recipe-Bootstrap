@@ -10,10 +10,10 @@ export default function Recipe(){
 
     let params = useParams();
 
-    const [detail, setDetail] = useState();
+    const [detail, setDetail] = useState({});
     const [recipeName, setRecipeName] = useState('');
 
-    const getRecipe = async ()=>{
+    const getRecipe = async () => {
         const data = await fetch(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=9a76d0f86c974882ba9ce8d4d782c5ef`)
         const detailData = await data.json()
         setDetail(detailData);
@@ -31,7 +31,7 @@ export default function Recipe(){
             <Row>
                 <Col md={12}>                
                     <h1 className="my-4">Recipe : <u>{recipeName}</u></h1>
-                    <Tabs defaultActiveKey="ingredients" id="uncontrolled-tab-example" className="mb-3">
+                    <Tabs defaultActiveKey="instructions" id="uncontrolled-tab-example" className="mb-3">
                         <Tab eventKey="instructions" title="Instructions">
                             <Row>
                                 <Col md={4}>
@@ -46,9 +46,9 @@ export default function Recipe(){
                         </Tab>
                         <Tab eventKey="ingredients" title="Ingredients">
                             <h2>Ingredients</h2>
-                            { detail.extendedIngredients.map((ingredient)=>(
+                            {/* {detail.extendedIngredients.map((ingredient)=>(
                         <li key={ingredient.id}>{ingredient.original}</li>
-                             ))}
+                             ))} */}
                         </Tab>
                     </Tabs>
                    
