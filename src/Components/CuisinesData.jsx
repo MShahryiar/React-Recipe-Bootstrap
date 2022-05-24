@@ -4,12 +4,12 @@ export default [
     {
         id:1,
         name:'African',
-        to:'/africa'
+        to:'/african'
     },
     {
         id:2,
         name:'American',
-        to:'/america'
+        to:'/american'
     },
     {
         id:3,
@@ -44,8 +44,8 @@ export default [
     },
     {
         id:9,
-        name:'Japanese',
-        to:'/japanese'
+        name:'Irish',
+        to:'/irish'
     },
     {
         id:10,
@@ -54,8 +54,8 @@ export default [
     },
     {
         id:11,
-        name:'Mexican',
-        to:'/mexican'
+        name:'Mediterranean',
+        to:'/mediterranean'
     },
     {
         id:12,

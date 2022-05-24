@@ -5,12 +5,14 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
+import Footer from '../Components/Footer';
 
 export default function Home(){
 
     
     
     return(
+        <>
        <Container>
 
            <Row >
@@ -32,10 +34,8 @@ export default function Home(){
                
            </Row>
        </Container>
-          
-        
-    
-
+       <Footer/>
+       </>
     );
     }
 

@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import {useState, useEffect} from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Footer from '../Components/Footer';
 
 
 export default function Recipe(){
@@ -30,10 +31,10 @@ export default function Recipe(){
     },[params.name])
 
     return(
-        <Container>
+        <>        <Container>
             <Row>
                 <Col md={12}>                
-                    <h1 className="my-4">Recipe : <u>{recipeName}</u></h1>
+                    <h1 className="my-4 text-center"><u>{recipeName}</u></h1>
                     <Tabs defaultActiveKey="instructions" id="uncontrolled-tab-example" className="mb-3">
                         <Tab eventKey="instructions" title="Instructions">
                             <Row>
@@ -71,7 +72,9 @@ export default function Recipe(){
                 </Col>
             </Row>
         </Container>
-        
+        <Footer/>
+        </>
+
     );
 }
 

@@ -7,6 +7,7 @@ import styled from 'styled-components';
 
 import { useParams } from "react-router-dom";
 import {useEffect, useState} from 'react';
+import Footer from '../Components/Footer';
 
 
 export default function Cuisine(){
@@ -52,6 +53,7 @@ export default function Cuisine(){
             
                 </Row>
             </Container>
+            <Footer/>
         </>
     );
 }
