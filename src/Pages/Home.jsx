@@ -16,18 +16,19 @@ export default function Home(){
        <Container>
 
            <Row >
+               <h2>Select Cuisine</h2>
                {CuisinesData.map((cuisine)=>{
                    return(
                     <Col key={cuisine.id} md={4}>                        
-                        <Card className="mt-2" >
+                        <StyledCard className="mt-2"  >
                         <StyledLink to={cuisine.to}>
-                        {cuisine.img &&<Card.Img variant="top" src={cuisine.img} />}
+                        {/* {cuisine.img &&<Card.Img variant="top" src={cuisine.img} />} */}
                         <Card.Body>
                             <Card.Title>{cuisine.name}</Card.Title>     
                             {/* <p>{cuisine.to}</p>                        */}
                         </Card.Body>
                         </StyledLink>
-                        </Card>
+                        </StyledCard>
                     </Col>
                    )
                })}
@@ -41,6 +42,28 @@ export default function Home(){
 
 const StyledLink = styled(Link)`
     text-decoration:none;
-    color:#000000;
+    color:white;
     text-align:center;
+
+    &:hover{
+        color:white;
+    }
+`
+
+const StyledCard = styled(Card)`
+    height : 10vh;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    background : linear-gradient(120deg, brown 90%,pink);
+    border:0;
+
+    &:hover{
+        background : linear-gradient(120deg, brown 10%,pink);
+        transition:1s all;
+        cursor:pointer;
+        text-decoration:none;
+        color:black;
+
+    }
 `

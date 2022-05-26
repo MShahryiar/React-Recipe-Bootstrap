@@ -37,14 +37,14 @@ export default function Cuisine(){
                 {cuisine.map((recipe)=>{
                     return(
                      <Col md={4}>   
-                        <Link to={'/recipe/'+recipe.id} >                    
+                        <StyledLink to={'/recipe/'+recipe.id} >                    
                         <Card className="mt-2" key={recipe.id}>                        
                         <Card.Body>
                             {recipe.image &&<Card.Img variant="top" src={recipe.image} />}
-                            <Card.Title>{recipe.title}</Card.Title>                             
+                            <Card.Title><small>{recipe.title}</small></Card.Title>                             
                         </Card.Body>                       
                         </Card>
-                        </Link>
+                        </StyledLink>
                     </Col>
                     
                     )
@@ -57,3 +57,13 @@ export default function Cuisine(){
         </>
     );
 }
+
+const StyledLink = styled(Link)`
+    text-decoration:none;
+    color:black;
+    text-align:center;
+
+    &:hover{
+        color:black;
+    }
+`
