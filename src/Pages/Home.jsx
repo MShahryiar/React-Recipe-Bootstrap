@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import Footer from '../Components/Footer';
+import Search from '../Components/Search';
 
 export default function Home(){
 
@@ -14,7 +15,9 @@ export default function Home(){
     return(
         <>
        <Container>
-
+            <Row>
+                <Search/>
+            </Row>
            <Row >
                <h2>Select Cuisine</h2>
                {CuisinesData.map((cuisine)=>{
@@ -60,7 +63,7 @@ const StyledCard = styled(Card)`
 
     &:hover{
         background : linear-gradient(120deg, brown 10%,pink);
-        transition:1s all;
+        transition:0.5s all;
         cursor:pointer;
         text-decoration:none;
         color:black;
